@@ -1,0 +1,60 @@
+\documentclass{article}
+\title{\textbf {De-Anonymization Attacks on Social Networking sites}}
+\author{\textbf {-by Vikram Patil}}
+\date{\textbf {Tuesday, February 9, 2016}}
+\begin{document}
+\maketitle
+This paper introduces de-anonymization attack on social networking sites like Xing, Facebook, LinkedIn etc. As we know these social networking sites have grown enormously in past few years. In fact Facebook claims 3% growth every week reaching 400 million users as of March 2010. This paper includes following\\
+\begin{description}
+\item[$\bullet$ ]	Introducing a novel de-anonymization attack to show how same can be applied to such social networking to get information about specific users.
+\item[$\bullet$ ]	Showing several techniques to attack these sites.
+\item[$\bullet$ ]	Providing theoretical analysis and empirical measurements to show the feasibility of attacks.\\
+
+
+\item[Background:-]
+\item[A)Model and definitions:]
+In this section, paper explains model and definitions of social networks, browser history and attacker model. 
+\item[$\bullet$ Social Networks:]	 A social network S is a graph G = (V;E) where nodes V = users, edges E = the friendship relation between two users.
+\item[$\bullet$ Browser history:]	 It is used as a building block in attack on browsing history B. Visited page URL is added to B.\\
+
+\item[B)Structure of networking sites:]
+\item[]This section gives overview on structuring of sites regarding Group formation, types and web applications.
+\item[C)History stealing:]
+\item[]A malicious website is used by attacker to retrieve user’s browsing history. In this technique attacker creates a HTML page with links to target specific web pages and uses background image tags. This way, attacker can also use client-side scripting to generate and move over a list of target links and check for visited pages.\\
+
+\item[De-Anonymization attacks:-]
+\item[]In this section attacks are explained in detail.
+\item[A)	Basic attack:]
+\item[]In this approach, attacker may join a group in the social networking sites and look for a person by in built search function. This is not feasible attacker has to check a link for every user and the user base is huge on such networking sites. Still this is a valuable tool for the attacker to identify a user if the user belongs to a small group of members.
+\item[B)	Improved attack:]
+\item[]The special features provided by networking sites such as forums and mailing lists can be used for history stealing technique. In this attack, attacker first gathers information about the group and the uses history stealing technique to identify a specific user by checking the page visited history if he/she is a group member or not.
+\item[C)	Effectively obtaining group information:]
+\item[]Number of groups compared to number of users is small but obtaining group and group member information is also tough. This can be done effectively in following two techniques.
+\item[$\bullet$ Group Directories:] Social networking give search functionality to serch for groups. This give most of the group names in a list. This is group directory.
+\item[$\bullet$ Group member crawling:] Obtaining user information which is public and searching the user in the groups.\\\\
+Following table demonstrates vulnerability comparison of social networks.
+
+
+\begin{table}[ht]
+\begin{tabular}{ |p{3cm}||p{2cm}| |p{2cm}||p{2cm}|}
+\hline
+ &Facebook&LinkedIn&Xing\\
+\hline
+Uses dynamic links	&Yes&Yes&Yes\\
+\hline
+Group directory&Full&Searchable&Searchable\\
+\hline
+Member directory&Full	&Full&Searchable\\
+\hline
+Group member search count&$<=$6000&$<=$500&	Unlimited\\
+\hline
+Public member profiles	&Yes&Yes&Yes\\
+\hline
+Vulnerable?&Yes&Yes&Yes\\
+\hline
+\end{tabular}
+\end{table}
+\end{description}
+My github repository link: {$\tt https://github.com/vikrampatil1/Latex1$}	
+\end{document}
+
